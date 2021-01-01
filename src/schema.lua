@@ -6,6 +6,8 @@ return {
     -- This oauth_server_url will contains the oauth2 server's token validation URL
     oauth_server_url = { required = true, type = "string" },
     -- Scope should only be used when authorization is also required
-    scope = { required =  false, type = "string" }
+    scope = { default = "", type = "string" },
+    -- Keepalive timeout for token validation call
+    keepalive_timeout = { default = 60000, type = "number" }
   }
 }
