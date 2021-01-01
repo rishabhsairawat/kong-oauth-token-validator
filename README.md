@@ -1,5 +1,5 @@
 # kong-oauth-token-validator
-Simple OAuth2 token validation plugin for Kong. If scope is not configured, it simply checks for response status from oauth server's token validation API otherwise it validates the scope of the token.
+Simple OAuth2 token validation plugin for Kong. If oauth token scope is not configured, it simply checks for response status from oauth server's token validation API otherwise it also validates the scope of the token.
 
 ---
 
